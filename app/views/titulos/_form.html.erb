@@ -1,0 +1,9 @@
+<%= simple_form_for(@titulo) do |f| %>
+    <%= f.input :codigo %>
+    <%= f.input :nombre %>
+    <%= f.input :abreviado %>
+    <%= f.association :editorial, :include_blank => false %>
+    <%= f.association :categoria, :include_blank => false %>
+    <%= f.input :disponible %>
+    <%= f.submit %>
+<% end %>

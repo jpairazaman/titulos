@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Titulos</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+    <div id="main">
+        <div id="header">
+            <a href="#" class="logo"><img src="images/LexusEditores.jpg" width="101" height="60" alt="" /></a>
+            <ul id="top-navigation">
+                <li><a href="#" class="active">Titulos</a></li>
+            </ul>
+        </div>
+        <div id="middle">
+            <div id="left-column">
+                <h3>Opciones</h3>
+                <ul class="nav">
+                    <li><a href="#">Titulos</a></li>
+                    <li><a href="#">Editoriales</a></li>
+                    <li><a href="#">Categorias</a></li>
+                </ul>
+                <a href="#" class="link">Link here</a>
+                <a href="#" class="link">Link here</a>
+            </div>
+            <div id="center-column">
+              <!-- 
+                <div class="top-bar">
+                    <a href="#" class="button">ADD NEW </a>
+                    <h1>Contents</h1>
+                    <div class="breadcrumbs"><a href="#">Homepage</a> / <a href="#">Contents</a></div>
+                </div>
+                <div class="select-bar">
+                    <label>
+                        <input type="text" name="textfield" />
+                    </label>
+                    <label>
+                        <input type="submit" name="Submit" value="Search" />
+                    </label>
+                  </div>
+
+                  -->
+
+                  <%= yield %>
+
+
+     <!--
+                  <div class="table">
+                    <table class="listing" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <th>Header Here</th>
+                            <th>Header</th>
+                            <th>Head</th>
+                            <th>Header</th>
+                            <th>Header</th>
+                            <th>Head</th>
+                            <th>Header</th>
+                            <th>Head</th>
+                        </tr>
+                        <tr>
+                            <td class="style1">- Lorem Ipsum </td>
+                            <td><img src="/img/add-icon.gif" width="16" height="16" alt="" /></td>
+                            <td><img src="img/hr.gif" width="16" height="16" alt="" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="" /></td>
+                            <td><img src="img/edit-icon.gif" width="16" height="16" alt="" /></td>
+                            <td><img src="img/login-icon.gif" width="16" height="16" alt="" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                        </tr>
+                        <tr>
+                            <td class="style2">- Lorem Ipsum </td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                            <td><img src="img/hr.gif" width="16" height="16" alt="" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/edit-icon.gif" width="16" height="16" alt="edit" /></td>
+                            <td><img src="img/login-icon.gif" width="16" height="16" alt="login" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                        </tr>
+                        <tr>
+                            <td class="style3">- Lorem Ipsum </td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                            <td><img src="img/hr.gif" width="16" height="16" alt="" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/edit-icon.gif" width="16" height="16" alt="edit" /></td>
+                            <td><img src="img/login-icon.gif" width="16" height="16" alt="login" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                        </tr>
+                        <tr>
+                            <td class="style1">- Lorem Ipsum </td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                            <td><img src="img/hr.gif" width="16" height="16" alt="" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/edit-icon.gif" width="16" height="16" alt="edit" /></td>
+                            <td><img src="img/login-icon.gif" width="16" height="16" alt="login" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                        </tr>
+                        <tr>
+                            <td class="style2">- Lorem Ipsum </td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                            <td><img src="img/hr.gif" width="16" height="16" alt="" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/edit-icon.gif" width="16" height="16" alt="edit" /></td>
+                            <td><img src="img/login-icon.gif" width="16" height="16" alt="login" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                        </tr>
+                        <tr>
+                            <td class="style3">- Lorem Ipsum </td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                            <td><img src="img/hr.gif" width="16" height="16" alt="" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/edit-icon.gif" width="16" height="16" alt="edit" /></td>
+                            <td><img src="img/login-icon.gif" width="16" height="16" alt="login" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                        </tr>
+                        <tr>
+                            <td class="style4">- Lorem Ipsum </td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                            <td><img src="img/hr.gif" width="16" height="16" alt="" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/edit-icon.gif" width="16" height="16" alt="edit" /></td>
+                            <td><img src="img/login-icon.gif" width="16" height="16" alt="login" /></td>
+                            <td><img src="img/save-icon.gif" width="16" height="16" alt="save" /></td>
+                            <td><img src="img/add-icon.gif" width="16" height="16" alt="add" /></td>
+                        </tr>
+                    </table>
+                    <div class="select">
+                        <strong>Other Pages: </strong>
+                        <select>
+                            <option>1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table">
+                    <table class="listing form" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <th class="full" colspan="2">Header Here</th>
+                        </tr>
+                        <tr>
+                            <td width="172"><strong>Lorem Ipsum</strong></td>
+                            <td><input type="text" class="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lorem Ipsum</strong></td>
+                            <td><input type="text" class="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lorem Ipsum</strong></td>
+                            <td><input type="text" class="text" /></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lorem Ipsum</strong></td>
+                            <td><input type="text" class="text" /></td>
+                        </tr>
+                    </table>
+                  </div>
+                  -->
+            </div>
+            <div id="right-column">
+                <strong class="h">Ayuda</strong>
+                <div class="box">Este es el módulo de mantenimiento de titulos.</div>
+            </div>
+        </div>
+        <div id="footer">
+			<p>Desarrollado por <a href="http://twitter.com/umutm">Umut Muhaddisoglu</a> 2011. Updated for HTML5/CSS3 by <a href="http://mediagearhead.com">Giles Wells</a> 2011.</p>
+		</div>
+  </div>
+
+</body>
+</html>

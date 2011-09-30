@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @titulo.codigo %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @titulo.nombre %>
+</p>
+
+<p>
+  <b>Abreviado:</b>
+  <%= @titulo.abreviado %>
+</p>
+
+<p>
+  <b>Editorial:</b>
+  <%= @titulo.editorial %>
+</p>
+
+<p>
+  <b>Categoria:</b>
+  <%= @titulo.categoria %>
+</p>
+
+<p>
+  <b>Disponible:</b>
+  <%= @titulo.disponible %>
+</p>
+
+
+<%= link_to 'Editar', edit_titulo_path(@titulo) %> |
+<%= link_to 'Listar', titulos_path %>

@@ -1,0 +1,34 @@
+<h1>Listing editoriales</h1>
+
+<% form_tag editoriales_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :buscar %>
+    <%= submit_tag "Buscar" %>
+  <P>
+<% end %>
+ 
+<table>
+  <tr>
+    <th>Codigo</th>
+    <th>Nombre</th>
+    <th>Disponible</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @editoriales.each do |editorial| %>
+  <tr>
+    <td><%= editorial.codigo %></td>
+    <td><%= editorial.nombre %></td>
+    <td><%= editorial.disponible %></td>
+    <td><%= link_to 'Show', editorial %></td>
+    <td><%= link_to 'Edit', edit_editorial_path(editorial) %></td>
+    <td><%= link_to 'Destroy', editorial, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Editorial', new_editorial_path %>

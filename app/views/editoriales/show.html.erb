@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @editorial.codigo %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @editorial.nombre %>
+</p>
+
+<p>
+  <b>Disponible:</b>
+  <%= @editorial.disponible %>
+</p>
+
+
+<%= link_to 'Edit', edit_editorial_path(@editorial) %> |
+<%= link_to 'Back', editoriales_path %>
